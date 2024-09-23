@@ -26,6 +26,6 @@ export const createRoute = createBrowserRouter([
     },
     {
         path: '*',
-        element: createRoute(NotFound)
+        element: createRoutesElements(NotFound)
     }
 ])
