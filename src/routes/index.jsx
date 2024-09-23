@@ -4,6 +4,8 @@ import { publicRoutes } from "./allRoutes";
 import Layout from "../layouts";
 import Loader from "../components/loader";
 
+const NotFound = React.lazy(() => import('../pages/notFound'))
+
 const createRoutesElements = (element) => {
     const Element = element;
     return(
@@ -23,6 +25,7 @@ export const createRoute = createBrowserRouter([
         }))
     },
     {
-        
+        path: '*',
+        element: createRoute(NotFound)
     }
 ])
