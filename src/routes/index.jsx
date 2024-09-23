@@ -21,5 +21,8 @@ export const createRoute = createBrowserRouter([
             ...(index ? {index} : {path}),
             element: createRoutesElements(element),
         }))
+    },
+    {
+        
     }
 ])
