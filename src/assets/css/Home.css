@@ -234,6 +234,50 @@
   .slider-content img:nth-last-child(1) {
     margin-right: 6rem;
   }
+
+  /* dsfcxlo,zjqsdiqjuihnzuibedsuhbkubezjubfhybzejdbsyubzeds */
+
+  .fourth-section{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 0;
+  }
+
+  .product-one{
+    height: 130vh;
+    background-image: url('../images/Home.avif');
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.product-two{
+    height: 130vh;
+    background-image: url('../images/meubles.avif');
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.product-three{
+    height: 130vh;
+    background-image: url('../images/vetements7.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.product h1{
+    font-family: 'Samsung Sharp Sans Bold';
+}
   
 
 

@@ -47,6 +47,21 @@ const commonProps = {
   buttonFontSize: '1em',
 };
 
+function Product(props){
+  const { name, description, detail, buttonText, className } = props;
+  return(
+    <div className={`absolute ${className} flex flex-col gap-2.5 product`}>
+      <h1 className='text-5xl'>{name}</h1>
+      <small>{detail}</small>
+      <span>{description}</span>
+      <div className='flex gap-4 items-center justify-center'>
+        <Link className='text-xs underline underline-offset-4'>En savoir plus</Link>
+        <Link className='bg-white text-sm text-black py-3 px-6 rounded-3xl'>{buttonText}</Link>
+      </div>
+    </div>
+  )
+}
+
 function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -141,6 +156,41 @@ function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+        <div className='fourth-section'>
+          <div className='relative product-one'>
+            <Product
+              className="top-8"
+              name="TV & AV"
+              detail=""
+              description="Ameliorer chaque instant avec plus d'éclats"
+              buttonText="Choisissez la vôtre (ou achetez là maintenant)"
+            />
+          </div>
+          <div className='relative product-two'>
+            <Product
+              className="top-10"
+              name="Électorménager"
+              detail=""
+              description="Découvrez notre game de produits sur mesure"
+              buttonText="Voir tout"
+            />
+          </div>
+          <div className='relative product-three'>
+            <Product
+              className="top-10 "
+              name="Vêtements"
+              detail=""
+              description="Découvrez différentes catégories de vêtements"
+              buttonText="Voir tout"
+            />
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
